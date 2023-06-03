@@ -63,7 +63,8 @@ export default function Home() {
             </div>
             <button onClick={fetchWeather}><BsSearch size={20}/></button>
           </form>
-          <div className='text-red-500 absolute text-xl mt-[500px] bg-black/50 p-8 rounded-md'>error : {error}.......</div>
+          <div className='text-red-500 absolute text-xl mt-[500px] w-full bg-black/50 p-8 rounded-md'>{error}.......
+          Please enter a valid city or check your internet connection</div>
          </div>
        
   
