@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import axios from 'axios'
 import { useState } from 'react'
 import {BsSearch, BySearch} from 'react-icons/bs'
-// import {BiSolidError} from 'react-icons/bi'
+import { ImWarning } from "react-icons/im";
 import Weather from '@/components/Weather'
 import Spinner from '@/components/Spinner'
 
@@ -63,7 +63,7 @@ export default function Home() {
             </div>
             <button onClick={fetchWeather}><BsSearch size={20}/></button>
           </form>
-          <div className='text-red-500 absolute text-xl mt-[500px] w-full bg-black/50 p-8 rounded-md'>{error}.......
+          <div className='text-red-500 absolute text-xl mt-[500px] w-full bg-black/50 p-8 rounded-md'><div className='m-5 flex justify-center items-center hover:cursor-pointer hover:scale-110 transition duration-300'><ImWarning size={30}/></div>{error}.......
           Please enter a valid city or check your internet connection</div>
          </div>
        
